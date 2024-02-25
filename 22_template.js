@@ -4,7 +4,7 @@ const path = require('path')
 const filePath = path.join(__dirname,'files')
 const App = express()
 
-//App.use(express.static(filePath))
+App.use(express.static(filePath))
 
 App.set("view engine",'ejs');
 
@@ -28,7 +28,6 @@ App.get( '/help' , (req,resp) => {
 App.get( '*' , (req,resp) => {
     resp.sendFile(`${filePath}/nopage.html`)
 } )
-
 
 
 App.listen(4506)
