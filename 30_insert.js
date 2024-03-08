@@ -1,4 +1,4 @@
-const DBConnect = require('./30_connection')
+const DBConnect = require('./29_connection')
 
 const insert = async () => {
     const db = await DBConnect();
