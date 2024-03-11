@@ -12,7 +12,7 @@ app.get('/', async (req,resp) => {
 
 app.post('/', async (req,resp) => {
     let data = await DBConnect();
-    let result = data.insertOne(req.body)
+    let result = data.insertOne(req.body) 
 })
 
 
